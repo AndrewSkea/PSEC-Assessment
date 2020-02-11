@@ -1,0 +1,5 @@
+Alice 0.75 0.25
+Bob 0.7
+Cathy 0.9
+Dan 0.6
+Eve 0.5

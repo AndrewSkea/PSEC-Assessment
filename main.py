@@ -27,6 +27,9 @@ class User(Person):
         self.friends = friends
 
     # Helper Functions
+    def increase_seen_for_friends(self):
+        for friend in self.friends:
+            friend.num_received += 1
 
     # Calculations
     def reshare_prob(self, friend):  # Definition 4       p(i,j)
@@ -39,11 +42,11 @@ class User(Person):
         return max([self.like_prob(friend) for friend in self.friends])
 
     def entropy_protecting_msg_from_friend(self, msg, friend):   # Lemma 2    H(X|Y)
-        k, k1, t, p = float(msg.k), float(1-msg.k), float(friend.trust), float(self.reshare_prob(friend))
+        k, k1, t, p = float(msg.k), float(msg.k-1), float(friend.trust), float(self.reshare_prob(friend))
         a = (k-k1*t*(1-p))/k
-        b = a * math.log(a ^ -1, 2)
+        b = a * math.log2(1/a)
         c = (k1*t*(1-p))/k
-        d = c * math.log((k/(t*(1-p))), 2)
+        d = c * math.log2(k/(t*(1-p)))
         return b + d
 
     def information_leakage(self, msg, friend):     # Proposition 2      f(i,j) of S
@@ -69,7 +72,7 @@ class Friend(Person):
         super(Friend, self).__init__(name)
 
     def __str__(self):
-        return "Friend. {}, Trust: {}".format(self.name, self.trust)
+        return "Friend. {}, Trust: {}, Num Reshares: {}, Num Likes: {}, Num Recieved: {}".format(self.name, self.trust, self.num_reshares, self.num_likes, self.num_received)
 
     def get_num_msgs_recieved(self):
         return self.num_received
@@ -189,9 +192,32 @@ def main():
     print("\nThe user:\n{}\n".format(user))
     print("Friends:")
     [print(friend) for friend in friends]
+    
+    is_activated = False
     for i in range(len(log)):
-        print_step(next(log_gen))
-        time.sleep(0.25)
+        step = next(log_gen)
+        
+        if step[0] == Func.Activate:
+            is_activated = True
+        if step[0] == Func.Post:
+            step[1].increase_seen_for_friends()
+        if step[0] == Func.Like:
+            step[1].num_likes += 1
+        if step[0] == Func.Share:
+            step[1].num_reshares += 1
+            
+        if is_activated:
+            print("Now activated")
+            if step[0] == Func.Post:
+                print("Utility with Friend 1: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[0])))
+                print("Utility with Friend 2: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[1])))
+                print("Utility with Friend 3: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[2])))
+                print("Utility with Friend 4: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[3])))
+                
+            
+            
+    [print(friend) for friend in friends]
+        
 
 
 if __name__ == "__main__":

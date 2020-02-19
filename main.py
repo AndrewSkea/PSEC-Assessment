@@ -1,24 +1,20 @@
-import pandas
-import numpy
-import sys
 import os
-import time
-import matplotlib
 import math
-from person import Person
 from util import print_step, Func
 
 
-class User(Person):
+class User:
     def __init__(self, name, benefit_risk, seen_like):
+        self.name = name
         self.benefit_risk = benefit_risk
         self.seen_like = seen_like
         self.messages = []
         self.friends = []
-        super(User, self).__init__(name)
 
     def __str__(self):
-        return "User. {}, BvR: {}, SvL: {}".format(self.name, self.benefit_risk, self.seen_like)
+        return "User. {}, BvR: {}, SvL: {}".format(
+            self.name, self.benefit_risk, self.seen_like
+        )
 
     def set_messages(self, msgs):
         self.messages = msgs
@@ -28,59 +24,75 @@ class User(Person):
 
     # Helper Functions
     def increase_seen_for_friends(self):
-        [friend.num_received += 1 for friend in self.friends]
+        for friend in self.friends:
+            friend.num_received += 1
 
     # Calculations
     def reshare_prob(self, friend):  # Definition 4       p(i,j)
-        return float(friend.get_number_reshares()/friend.get_num_msgs_recieved())
+        return float(friend.num_reshares / friend.num_received)
 
-    def like_prob(self, friend): # Lemma 4                m(i,j)
-        return float(friend.get_number_likes()/friend.get_num_msgs_recieved())
+    def like_prob(self, friend):  # Lemma 4                m(i,j)
+        return float(friend.num_likes / friend.num_received)
 
     def get_max_like_prob(self):
         return max([self.like_prob(friend) for friend in self.friends])
 
-    def entropy_protecting_msg_from_friend(self, msg, friend):   # Lemma 2    H(X|Y)
-        k, k1, t, p = float(msg.k), float(msg.k-1), float(friend.trust), float(self.reshare_prob(friend))
-        a = (k-k1*t*(1-p))/k
-        b = a * math.log2(1/a)
-        c = (k1*t*(1-p))/k
-        d = c * math.log2(k/(t*(1-p)))
+    def entropy_protecting_msg_from_friend(self, msg, friend):  # Lemma 2    H(X|Y)
+        k, k1, t, p = (
+            float(msg.k),
+            float(msg.k - 1),
+            float(friend.trust),
+            float(self.reshare_prob(friend)),
+        )
+        a = (k - k1 * t * (1 - p)) / k
+        b = a * math.log2(1 / a)
+        c = (k1 * t * (1 - p)) / k
+        d = c * math.log2(k / (t * (1 - p)))
         return b + d
 
-    def information_leakage(self, msg, friend):     # Proposition 2      f(i,j) of S
-        return 1 - self.entropy_protecting_msg_from_friend(msg, friend)/msg.calc_entropy()
+    def information_leakage(self, msg, friend):  # Proposition 2      f(i,j) of S
+        if msg.k == 1:
+            return 0
+        return (1 - self.entropy_protecting_msg_from_friend(msg, friend) / msg.calc_entropy())
 
-    def risk_sharing_with_friend(self, msg, friend):    # Definition 3  r(i,j) of S
+    def risk_sharing_with_friend(self, msg, friend):  # Definition 3  r(i,j) of S
         return -self.information_leakage(msg, friend) * msg.sensitivity
 
-    def social_benefit(self, msg, friend):      # Proposition 3      b(i,j) of S
-        return self.seen_like + (1-self.seen_like) * (self.like_prob(friend)/self.get_max_like_prob())
+    def social_benefit(self, msg, friend):  # Proposition 3      b(i,j) of S
+        return self.seen_like + (1 - self.seen_like) * (
+            self.like_prob(friend) / self.get_max_like_prob()
+        )
 
-    def utility_sharing_msg_with_friend(self, msg, friend):    # Definition 1    u(i,j) of S
-        return (1-self.benefit_risk) * self.social_benefit(msg, friend) + \
-               self.benefit_risk*self.risk_sharing_with_friend(msg, friend)
+    # Definition 1    u(i,j) of S
+    def utility_sharing_msg_with_friend(self, msg, friend):
+        return (1 - self.benefit_risk) * self.social_benefit(
+            msg, friend
+        ) + self.benefit_risk * self.risk_sharing_with_friend(msg, friend)
 
+    # Definition 1    u(i,j) of S
+    def utility_sharing_msg_with_friends(self, msg):
+        raw_data = {}
+        final_str = "{} ".format(msg.id)
+        for friend in self.friends:
+            res = self.utility_sharing_msg_with_friend(msg, friend)
+            raw_data[friend.name] = res
+            if res > 0:
+                final_str += "{} ".format(friend.name)
+        return raw_data, final_str
+            
 
-class Friend(Person):
+class Friend:
     def __init__(self, name, trust):
+        self.name = name
         self.trust = trust
         self.num_reshares = 0
         self.num_likes = 0
         self.num_received = 0
-        super(Friend, self).__init__(name)
 
     def __str__(self):
-        return "Friend. {}, Trust: {}, Num Reshares: {}, Num Likes: {}, Num Recieved: {}".format(self.name, self.trust, self.num_reshares, self.num_likes, self.num_received)
-
-    def get_num_msgs_recieved(self):
-        return self.num_received
-
-    def get_number_reshares(self):
-        return self.num_reshares
-
-    def get_number_likes(self):
-        return self.num_likes
+        return "Friend. {}, Trust: {}, Num Reshares: {}, Num Likes: {}, Num Recieved: {}".format(
+            self.name, self.trust, self.num_reshares, self.num_likes, self.num_received
+        )
 
 
 class Message:
@@ -92,7 +104,7 @@ class Message:
     def __str__(self):
         return "Msg.{} k: {} Snesitivity: {}".format(self.id, self.k, self.sensitivity)
 
-    def calc_entropy(self): # Lemma 1     H(X)
+    def calc_entropy(self):  # Lemma 1  H(X)
         return math.log(self.k, 2)
 
 
@@ -186,37 +198,27 @@ def main():
 
     log_gen = iterate_log(steps)
 
-
-
     print("\nThe user:\n{}\n".format(user))
     print("Friends:")
     [print(friend) for friend in friends]
-    
+
     is_activated = False
     for i in range(len(log)):
         step = next(log_gen)
-        
+
         if step[0] == Func.Activate:
             is_activated = True
+            print("--------\nNow activated\n--------")
         if step[0] == Func.Post:
             step[1].increase_seen_for_friends()
         if step[0] == Func.Like:
             step[1].num_likes += 1
         if step[0] == Func.Share:
             step[1].num_reshares += 1
-            
+
         if is_activated:
-            print("Now activated")
             if step[0] == Func.Post:
-                print("Utility with Friend 1: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[0])))
-                print("Utility with Friend 2: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[1])))
-                print("Utility with Friend 3: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[2])))
-                print("Utility with Friend 4: {}".format(step[1].utility_sharing_msg_with_friend(step[2], step[1].friends[3])))
-                
-            
-            
-    [print(friend) for friend in friends]
-        
+                print(step[1].utility_sharing_msg_with_friends(step[2])[1])
 
 
 if __name__ == "__main__":

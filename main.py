@@ -1,9 +1,26 @@
+#############################
+# Code based off of idea from this paper:
+# http://oro.open.ac.uk/40549/1/yang14trustcom.pdf
+#
+# The 'lemma' and 'definition' ids mentioned
+# throughout the code are described in this paper
+#############################
+
 import os
 import math
 from util import print_step, Func
 
 
 class User:
+    """
+    Class User represents the main person who is sharing posts
+    -----------------
+    name: name of the person
+    benefit_risk: ratio of the benefit to risk of posting to a person
+    seen_like: ratio of seen posts to liked posts
+    messages: array of all messages posted during the log
+    friends: array of all the friends created from the log
+    """
     def __init__(self, name, benefit_risk, seen_like):
         self.name = name
         self.benefit_risk = benefit_risk
@@ -13,14 +30,7 @@ class User:
 
     def __str__(self):
         return "User. {}, BvR: {}, SvL: {}".format(
-            self.name, self.benefit_risk, self.seen_like
-        )
-
-    def set_messages(self, msgs):
-        self.messages = msgs
-
-    def set_friends(self, friends):
-        self.friends = friends
+            self.name, self.benefit_risk, self.seen_like)
 
     # Helper Functions
     def increase_seen_for_friends(self):
@@ -38,12 +48,7 @@ class User:
         return max([self.like_prob(friend) for friend in self.friends])
 
     def entropy_protecting_msg_from_friend(self, msg, friend):  # Lemma 2    H(X|Y)
-        k, k1, t, p = (
-            float(msg.k),
-            float(msg.k - 1),
-            float(friend.trust),
-            float(self.reshare_prob(friend)),
-        )
+        k, k1, t, p = (float(msg.k), float(msg.k - 1), float(friend.trust), float(self.reshare_prob(friend)))
         a = (k - k1 * t * (1 - p)) / k
         b = a * math.log2(1 / a)
         c = (k1 * t * (1 - p)) / k
@@ -60,8 +65,7 @@ class User:
 
     def social_benefit(self, msg, friend):  # Proposition 3      b(i,j) of S
         return self.seen_like + (1 - self.seen_like) * (
-            self.like_prob(friend) / self.get_max_like_prob()
-        )
+            self.like_prob(friend) / self.get_max_like_prob())
 
     # Definition 1    u(i,j) of S
     def utility_sharing_msg_with_friend(self, msg, friend):
@@ -71,6 +75,11 @@ class User:
 
     # Definition 1    u(i,j) of S
     def utility_sharing_msg_with_friends(self, msg):
+        """
+        [0] Returns a raw_data dictionary including all the utilities
+        [1] Returns a final string with Message id and people to share it with
+            e.g.:   504 Bob Cathy
+        """
         raw_data = {}
         final_str = "{} ".format(msg.id)
         for friend in self.friends:
@@ -82,6 +91,15 @@ class User:
             
 
 class Friend:
+    """
+    Class Message
+    ------
+    name: name of the friend
+    trust: How much the user trusts this friend (changes)
+    num_reshares: Number of reshares this friend does on posts from the user
+    num_likes: Number of likes this friend does on posts from the user
+    num_received: Number of posts this friend gets from the user
+    """
     def __init__(self, name, trust):
         self.name = name
         self.trust = trust
@@ -91,11 +109,17 @@ class Friend:
 
     def __str__(self):
         return "Friend. {}, Trust: {}, Num Reshares: {}, Num Likes: {}, Num Recieved: {}".format(
-            self.name, self.trust, self.num_reshares, self.num_likes, self.num_received
-        )
+            self.name, self.trust, self.num_reshares, self.num_likes, self.num_received)
 
 
 class Message:
+    """
+    Class Message
+    ------
+    id: unique id of the message
+    k: Number of 'info' elements in the post
+    sensitivity: How sensitive it is to the user
+    """
     def __init__(self, uID, k, sensitivity):
         self.id = uID
         self.k = k
@@ -105,10 +129,14 @@ class Message:
         return "Msg.{} k: {} Snesitivity: {}".format(self.id, self.k, self.sensitivity)
 
     def calc_entropy(self):  # Lemma 1  H(X)
-        return math.log(self.k, 2)
+        return math.log2(self.k)
 
 
 def get_inputs():
+    """
+    Reads in the config table and the log files
+    returns the list of steps
+    """
     with open("./data/config.txt", "r") as conf:
         people = conf.readlines()
 
@@ -119,11 +147,20 @@ def get_inputs():
 
 
 def iterate_log(log):
+    """
+    Creates a function to generate the next 
+    step when calling the 'next' keyword
+    """
     for i in log:
         yield i
 
 
 def create_people(config):
+    """
+    Creates the list of friends from the config file
+    and the main user and sets up instances
+    return the user and an array of friends
+    """
     def parse_line(ln):
         # Get str name and parse other numbers into floats
         # Returns array of elements on the input line
@@ -145,6 +182,12 @@ def create_people(config):
 
 
 def create_steps(log, user, friends):
+    """
+    Creates a parsed list of steps and returns them
+    This has the general format of
+    [function_type, friend/user, message]
+    Also returns the list of messages
+    """
     messages = []
 
     def get_friend_with_name(name):
@@ -190,22 +233,28 @@ def create_steps(log, user, friends):
 def main():
     # Get the inputs into text arrays
     config, log = get_inputs()
-    # Create the generator to wield each line of log
+    # Creates all the people from the config file
     user, friends = create_people(config)
+    # Gets all the messages and parsed steps
     messages, steps = create_steps(log, user, friends)
-    user.set_messages(messages)
-    user.set_friends(friends)
-
+    # Sets the messages and friends to the variables 
+    # in the user instance
+    user.messages = messages
+    user.friends = friends
+    # Creates the log generator in order to use 'next'
     log_gen = iterate_log(steps)
 
+    # Initial logging
     print("\nThe user:\n{}\n".format(user))
     print("Friends:")
     [print(friend) for friend in friends]
 
+    # Iterates through the parsed log steps
     is_activated = False
     for i in range(len(log)):
         step = next(log_gen)
 
+        # Updates the relevant variables for each post type
         if step[0] == Func.Activate:
             is_activated = True
             print("--------\nNow activated\n--------")
@@ -216,6 +265,8 @@ def main():
         if step[0] == Func.Share:
             step[1].num_reshares += 1
 
+        # Once activated, returns the string
+        # with message id and the people to share it with
         if is_activated:
             if step[0] == Func.Post:
                 print(step[1].utility_sharing_msg_with_friends(step[2])[1])

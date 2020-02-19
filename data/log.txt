@@ -1,0 +1,2057 @@
+Alice 1 5 0.6
+Alice 2 5 0.7
+Bob 2 share
+Alice 3 2 0.2
+Alice 4 2 0.2
+Bob 1 like
+Alice 5 4 0.5
+Cathy 2 share
+Bob 3 share
+Alice 6 2 0.8
+Eve 4 share
+Eve 2 share
+Bob 6 share
+Alice 7 4 0.0
+Eve 1 share
+Cathy 7 share
+Alice 8 4 0.3
+Alice 9 5 0.6
+Dan 2 share
+Alice 10 2 0.9
+Bob 9 share
+Alice 11 4 0.1
+Eve 8 like
+Dan 4 share
+Alice 12 3 0.7
+Dan 11 share
+Alice 13 4 0.1
+Alice 14 4 0.2
+Alice 15 4 0.7
+Alice 16 3 0.4
+Eve 3 share
+Alice 17 4 0.8
+Alice 18 3 0.9
+Eve 5 share
+Alice 19 5 0.2
+Alice 20 4 0.4
+Cathy 19 like
+Eve 10 share
+Alice 21 5 0.1
+Dan 10 like
+Cathy 9 share
+Eve 16 share
+Eve 9 share
+Eve 17 share
+Alice 22 3 0.5
+Cathy 10 like
+Alice 23 3 0.9
+Dan 9 share
+Bob 19 like
+Alice 24 5 0.0
+Eve 23 like
+Alice 25 5 0.8
+Cathy 5 like
+Cathy 17 share
+Alice 26 4 0.3
+Eve 12 like
+Alice 27 4 0.2
+Alice 28 4 0.8
+Bob 18 share
+Alice 29 3 0.7
+Alice 30 2 0.7
+Bob 9 like
+Cathy 29 share
+Dan 28 share
+Bob 7 like
+Alice 31 3 0.4
+Alice 32 4 0.1
+Cathy 25 share
+Cathy 20 share
+Alice 33 3 0.4
+Eve 24 share
+Cathy 10 share
+Eve 7 share
+Dan 12 like
+Alice 34 2 0.9
+Cathy 32 like
+Eve 4 like
+Dan 13 like
+Cathy 19 share
+Cathy 30 share
+Alice 35 2 0.1
+Dan 26 share
+Dan 32 share
+Eve 22 like
+Bob 7 share
+Dan 31 share
+Alice 36 2 0.6
+Alice 37 5 0.5
+Alice 38 4 0.8
+Dan 2 like
+Alice 39 5 0.1
+Bob 35 share
+Cathy 4 share
+Alice 40 3 0.4
+Cathy 13 share
+Alice 41 2 0.0
+Dan 15 share
+Alice 42 5 0.0
+Eve 17 like
+Dan 6 share
+Dan 19 share
+Cathy 18 share
+Eve 22 share
+Dan 25 share
+Alice 43 2 0.3
+Alice 44 2 0.8
+Eve 21 like
+Eve 37 share
+Eve 30 share
+Eve 1 like
+Dan 42 share
+Alice 45 5 0.7
+Alice 46 5 0.2
+Bob 31 like
+Eve 21 share
+Eve 26 like
+Eve 32 share
+Bob 33 like
+Dan 35 share
+Eve 25 share
+Bob 41 share
+Alice 47 2 0.3
+Bob 15 like
+Alice 48 3 0.4
+Bob 35 like
+Dan 47 share
+Eve 18 like
+Eve 19 share
+Alice 49 2 0.1
+Cathy 21 like
+Alice 50 5 0.7
+Bob 48 like
+Bob 36 like
+Dan 23 share
+Eve 39 share
+Alice 51 5 0.0
+Alice 52 5 0.4
+Alice 53 3 0.3
+Alice 54 4 0.4
+Bob 47 share
+Eve 27 like
+Eve 50 share
+Dan 45 share
+Alice 55 5 0.6
+Alice 56 4 0.1
+Alice 57 5 0.7
+Eve 51 share
+Cathy 16 share
+Bob 43 like
+Dan 40 like
+Eve 47 share
+Dan 24 share
+Dan 36 share
+Alice 58 3 0.8
+Eve 36 like
+Cathy 5 share
+Bob 44 like
+Cathy 31 share
+Alice 59 5 0.7
+Alice 60 3 0.8
+Bob 17 share
+Cathy 3 share
+Dan 56 share
+Bob 49 like
+Alice 61 5 0.3
+Alice 62 4 0.0
+Cathy 21 share
+Eve 2 like
+Eve 47 like
+Dan 10 share
+Alice 63 2 0.2
+Eve 31 like
+Dan 43 like
+Alice 64 5 0.5
+Dan 30 share
+Bob 1 share
+Alice 65 4 0.8
+Cathy 7 like
+Eve 34 share
+Alice 66 2 0.7
+Dan 58 share
+Dan 18 share
+Eve 62 like
+Alice 67 3 0.2
+Alice 68 5 0.2
+Alice 69 3 0.6
+Eve 13 like
+Cathy 8 share
+Alice 70 5 0.9
+Eve 43 like
+Dan 51 share
+Eve 33 share
+Alice 71 2 0.0
+Dan 60 share
+Alice 72 3 0.7
+Alice 73 4 0.3
+Bob 30 like
+Eve 41 like
+Alice 74 4 0.2
+Dan 29 like
+Cathy 26 like
+Eve 68 like
+Eve 29 share
+Alice 75 4 0.0
+Cathy 58 share
+Cathy 32 share
+Alice 76 2 0.1
+Eve 14 like
+Eve 37 like
+Eve 31 share
+Dan 8 share
+Bob 53 share
+Alice 77 4 0.4
+Alice 78 3 0.6
+Alice 79 4 0.5
+Cathy 23 share
+Eve 69 like
+Alice 80 3 0.8
+Eve 45 like
+Eve 40 like
+Cathy 75 share
+Cathy 40 share
+Alice 81 2 0.2
+Bob 57 like
+Alice 82 4 0.6
+Cathy 34 share
+Cathy 66 share
+Alice 83 2 0.6
+Eve 71 share
+Cathy 47 share
+Cathy 44 share
+Dan 29 share
+Eve 65 like
+Alice 84 4 0.5
+Dan 22 share
+Dan 83 share
+Alice 85 5 0.6
+Bob 36 share
+Eve 54 share
+Bob 51 share
+Alice 86 2 0.1
+Eve 39 like
+Dan 3 share
+Bob 80 like
+Cathy 71 share
+Dan 7 share
+Cathy 52 like
+Alice 87 5 0.0
+Cathy 80 share
+Bob 82 like
+Dan 76 share
+Cathy 12 share
+Alice 88 2 0.9
+Dan 37 share
+Dan 13 share
+Bob 50 share
+Eve 56 share
+Eve 24 like
+Dan 39 share
+Eve 46 share
+Dan 40 share
+Alice 89 5 0.1
+Eve 78 share
+Bob 15 share
+Alice 90 5 0.5
+Bob 29 like
+Eve 73 share
+Dan 41 share
+Eve 59 share
+Bob 33 share
+Alice 91 4 0.1
+Bob 16 share
+Bob 83 like
+Cathy 45 like
+Cathy 26 share
+Alice 92 5 0.5
+Cathy 60 share
+Bob 17 like
+Alice 93 5 0.5
+Cathy 42 share
+Eve 68 share
+Eve 76 share
+Bob 71 like
+Alice 94 2 0.4
+Dan 67 share
+Alice 95 2 0.3
+Bob 2 like
+Alice 96 3 0.6
+Alice 97 4 0.4
+Eve 44 share
+Cathy 8 like
+Cathy 35 share
+Dan 19 like
+Bob 59 share
+Eve 18 share
+Bob 31 share
+Alice 98 5 0.6
+Eve 64 like
+Dan 85 share
+Dan 97 like
+Dan 89 like
+Dan 9 like
+Bob 12 like
+Bob 6 like
+Alice 99 4 0.7
+Eve 84 like
+Eve 95 share
+Eve 65 share
+Cathy 53 share
+Alice 100 4 0.1
+Eve 42 like
+Cathy 29 like
+Bob 99 like
+Cathy 59 share
+Alice 101 3 0.4
+Alice 102 5 0.0
+Alice 103 2 0.2
+Eve 81 share
+Bob 55 share
+Dan 88 like
+Dan 57 share
+Cathy 87 share
+Cathy 55 share
+Alice 104 4 0.9
+Cathy 84 share
+Cathy 39 share
+Cathy 41 share
+Alice 105 3 0.8
+Eve 82 like
+Dan 59 like
+Bob 45 like
+Eve 26 share
+Cathy 98 share
+Cathy 103 share
+Alice 106 4 0.5
+Dan 97 share
+Dan 50 like
+Eve 6 like
+Eve 96 share
+Eve 33 like
+Dan 64 share
+Dan 24 like
+Bob 37 share
+Eve 104 share
+Alice 107 5 0.6
+Cathy 43 like
+Bob 84 like
+Eve 32 like
+Eve 50 like
+Dan 26 like
+Dan 96 share
+Cathy 27 share
+Bob 96 like
+Cathy 49 share
+Alice 108 5 0.4
+Dan 55 share
+Eve 96 like
+Cathy 14 share
+Cathy 64 share
+Eve 102 like
+Eve 63 like
+Dan 42 like
+Dan 89 share
+Dan 81 share
+Alice 109 4 0.8
+Bob 32 share
+Dan 75 share
+Eve 79 share
+Eve 11 share
+Bob 54 share
+Eve 108 share
+Eve 53 share
+Alice 110 5 0.3
+Eve 55 like
+Cathy 61 share
+Eve 75 like
+Eve 91 like
+Cathy 43 share
+Cathy 88 like
+Alice 111 3 0.6
+Bob 50 like
+Eve 99 share
+Eve 60 share
+Eve 78 like
+Alice 112 4 0.3
+Eve 76 like
+Bob 34 like
+Cathy 99 share
+Eve 93 share
+Bob 78 like
+Dan 34 share
+Eve 20 share
+Bob 75 share
+Alice 113 3 0.4
+Bob 93 share
+Alice 114 3 0.8
+Eve 109 like
+Eve 87 like
+Alice 115 3 0.5
+Dan 4 like
+Bob 40 like
+Alice 116 5 0.6
+Dan 110 share
+Alice 117 4 0.3
+Cathy 57 share
+Dan 106 share
+Cathy 78 share
+Alice 118 5 0.1
+Alice 119 5 0.2
+Eve 118 share
+Alice 120 3 0.7
+Bob 27 like
+Cathy 37 share
+Eve 89 share
+Cathy 97 share
+Dan 105 share
+Cathy 52 share
+Alice 121 5 0.3
+Alice 122 2 0.1
+Bob 21 like
+Cathy 113 share
+Dan 88 share
+Eve 41 share
+Alice 123 4 0.0
+Dan 64 like
+Bob 106 share
+Dan 70 share
+Alice 124 3 0.2
+Eve 117 share
+Dan 3 like
+Dan 17 like
+Dan 87 share
+Cathy 56 share
+Dan 11 like
+Bob 20 share
+Alice 125 4 0.5
+Alice 126 4 0.9
+Bob 53 like
+Bob 110 like
+Eve 88 share
+Cathy 63 share
+Eve 90 like
+Dan 117 share
+Alice 127 2 0.6
+Alice 128 2 0.9
+Eve 28 share
+Dan 100 share
+Cathy 121 like
+Dan 114 share
+Bob 107 share
+Cathy 111 share
+Cathy 101 share
+Cathy 77 share
+Alice 129 2 0.9
+Dan 21 like
+Bob 102 share
+Bob 60 like
+Eve 49 like
+Dan 34 like
+Eve 116 share
+Alice 130 4 0.0
+Cathy 128 share
+Eve 74 share
+Alice 131 2 0.7
+Bob 104 share
+Bob 77 like
+Cathy 90 like
+Alice 132 2 0.5
+Eve 61 share
+Bob 127 share
+Alice 133 4 0.2
+Cathy 46 share
+Eve 130 like
+Eve 121 share
+Bob 89 share
+Alice 134 3 0.5
+Cathy 68 share
+Eve 134 share
+Bob 109 like
+Alice 135 4 0.0
+Alice 136 2 0.1
+Cathy 62 share
+Eve 122 share
+Dan 95 share
+Alice 137 5 0.7
+Eve 57 share
+Eve 128 share
+Alice 138 2 0.4
+Bob 126 like
+Cathy 122 share
+Bob 25 share
+Alice 139 5 0.2
+Eve 5 like
+Cathy 81 share
+Eve 106 like
+Dan 129 share
+Eve 139 like
+Bob 107 like
+Alice 140 2 0.4
+Cathy 76 share
+Alice 141 2 0.0
+Eve 74 like
+Eve 109 share
+Eve 79 like
+Alice 142 2 0.3
+Eve 135 like
+Alice 143 3 0.3
+Eve 92 like
+Cathy 135 share
+Dan 130 share
+Dan 48 share
+Bob 8 share
+Cathy 45 share
+Alice 144 2 0.3
+Eve 10 like
+Alice 145 4 0.9
+Dan 71 share
+Alice 146 2 0.7
+Alice 147 3 0.7
+Cathy 14 like
+Alice 148 3 0.2
+Dan 66 share
+Eve 95 like
+Eve 75 share
+Dan 93 share
+Dan 12 share
+Alice 149 5 0.2
+Dan 52 like
+Alice 150 4 0.3
+Bob 34 share
+Alice 151 4 0.4
+Eve 7 like
+Bob 133 like
+Cathy 67 like
+Alice 152 3 0.3
+Dan 79 share
+Dan 73 share
+Alice 153 5 0.3
+Dan 137 share
+Bob 118 like
+Alice 154 4 0.8
+Alice 155 3 0.0
+Alice 156 4 0.4
+Eve 91 share
+Cathy 95 share
+Dan 52 share
+Alice 157 5 0.6
+Dan 20 share
+Cathy 153 share
+Eve 156 like
+Dan 127 share
+Cathy 123 share
+Alice 158 5 0.8
+Dan 77 share
+Eve 150 like
+Eve 23 share
+Alice 159 4 0.7
+Alice 160 4 0.1
+Eve 70 like
+Bob 151 like
+Eve 35 share
+Eve 142 share
+Eve 13 share
+Bob 136 share
+Cathy 38 share
+Cathy 50 share
+Alice 161 4 0.2
+Eve 134 like
+Cathy 69 share
+Bob 103 like
+Eve 126 like
+Alice 162 3 0.2
+Eve 77 share
+Eve 20 like
+Eve 59 like
+Eve 119 share
+Cathy 93 share
+Alice 163 2 0.9
+Alice 164 4 0.5
+Alice 165 3 0.1
+Eve 125 share
+Eve 138 like
+Alice 166 3 0.5
+Cathy 86 share
+Cathy 117 share
+Eve 102 share
+Bob 20 like
+Alice 167 4 0.8
+Bob 48 share
+Bob 46 like
+Eve 157 like
+Alice 168 2 0.2
+Alice 169 3 0.1
+Eve 122 like
+Cathy 160 share
+Eve 156 share
+Eve 51 like
+Alice 170 4 0.4
+Dan 27 like
+Eve 149 share
+Cathy 90 share
+Dan 43 share
+Dan 91 share
+Bob 155 like
+Cathy 108 share
+Alice 171 2 0.8
+Cathy 169 share
+Eve 98 like
+Cathy 125 share
+Bob 95 like
+Eve 67 share
+Bob 98 like
+Alice 172 2 0.8
+Eve 66 like
+Dan 86 like
+Alice 173 4 0.8
+Eve 61 like
+Eve 116 like
+Alice 174 3 0.6
+Alice 175 3 0.7
+Cathy 51 share
+Bob 108 like
+Eve 57 like
+Eve 150 share
+Bob 127 like
+Bob 87 share
+Dan 44 share
+Bob 154 share
+Alice 176 4 0.7
+Eve 136 like
+Eve 147 like
+Alice 177 2 0.2
+Eve 38 share
+Eve 135 share
+Eve 124 share
+Bob 68 like
+Eve 45 share
+Dan 136 share
+Eve 168 share
+Alice 178 3 0.1
+Eve 107 like
+Dan 14 share
+Eve 142 like
+Alice 179 2 0.5
+Dan 15 like
+Dan 94 share
+Eve 113 like
+Eve 8 share
+Dan 59 share
+Bob 120 like
+Dan 104 share
+Cathy 155 share
+Alice 180 2 0.1
+Eve 165 like
+Cathy 92 share
+Eve 121 like
+Alice 181 5 0.6
+Eve 88 like
+Eve 133 share
+Cathy 73 share
+Eve 112 like
+Alice 182 4 0.4
+Alice 183 2 0.3
+Alice 184 4 0.9
+Alice 185 3 0.8
+Eve 118 like
+Alice 186 3 0.1
+Dan 180 share
+Bob 14 like
+Alice 187 3 0.3
+Dan 158 share
+Dan 179 share
+Alice 188 4 0.9
+Eve 166 share
+Bob 157 share
+Alice 189 4 0.0
+Cathy 181 share
+Bob 113 like
+Eve 9 like
+Eve 160 share
+Cathy 6 share
+Dan 16 share
+Dan 154 share
+Alice 190 4 0.1
+Alice 191 4 0.5
+Bob 29 share
+Eve 83 like
+Eve 186 like
+Eve 19 like
+Bob 93 like
+Dan 144 share
+Alice 192 3 0.1
+Dan 99 share
+Bob 104 like
+Dan 115 share
+Bob 169 share
+Dan 165 share
+Cathy 162 share
+Alice 193 5 0.9
+Bob 28 like
+Alice 194 2 0.3
+Eve 67 like
+Alice 195 3 0.7
+Cathy 67 share
+Alice 196 2 0.6
+Eve 154 like
+Eve 120 share
+Eve 139 share
+Eve 103 share
+Alice 197 5 0.0
+Eve 54 like
+Eve 191 share
+Bob 39 share
+Bob 18 like
+Dan 74 share
+Eve 173 share
+Alice 198 3 0.9
+Eve 195 like
+Eve 29 like
+Eve 128 like
+Eve 178 share
+Alice 199 5 0.5
+Dan 148 share
+Alice 200 2 0.2
+Alice 201 4 0.1
+Eve 185 share
+Alice 202 2 0.7
+Bob 85 share
+Dan 62 share
+Alice 203 2 0.7
+Cathy 195 share
+Eve 153 like
+Alice 204 3 0.7
+Eve 183 like
+Cathy 104 share
+Eve 129 share
+Dan 147 share
+Alice 205 5 0.6
+Eve 148 share
+Eve 197 share
+Dan 196 share
+Bob 59 like
+Eve 175 share
+Bob 191 like
+Dan 125 share
+Alice 206 4 0.1
+Bob 88 share
+Cathy 102 share
+Eve 63 share
+Cathy 137 share
+Eve 143 share
+Alice 207 3 0.7
+Dan 53 share
+Dan 172 share
+Alice 208 4 0.8
+Eve 140 share
+Bob 204 share
+Alice 209 2 0.4
+Eve 105 share
+Eve 58 share
+Eve 94 share
+Cathy 59 like
+Dan 124 share
+Bob 201 share
+Cathy 179 share
+Alice 210 4 0.5
+Eve 159 like
+Eve 194 like
+Eve 35 like
+Cathy 167 like
+Alice 211 4 0.6
+Eve 124 like
+Alice 212 3 0.4
+Cathy 182 share
+Bob 62 share
+Eve 80 share
+Eve 182 share
+Dan 38 share
+Alice 213 2 0.2
+Bob 170 share
+Alice 214 3 0.2
+Eve 27 share
+Dan 116 share
+Alice 215 5 0.7
+Eve 111 like
+Eve 138 share
+Eve 204 share
+Cathy 129 share
+Dan 74 like
+Dan 61 share
+Bob 193 like
+Eve 196 share
+Cathy 134 share
+Alice 216 3 0.5
+Cathy 54 share
+Eve 210 like
+Cathy 112 like
+Alice 217 4 0.9
+Bob 67 like
+Alice 218 5 0.9
+Bob 61 like
+Alice 219 4 0.7
+Eve 202 like
+Alice 220 3 0.2
+Bob 165 like
+Eve 132 like
+Bob 43 share
+Alice 221 2 0.2
+Alice 222 2 0.2
+Eve 189 like
+Alice 223 5 0.9
+Cathy 188 share
+Alice 224 4 0.3
+Alice 225 4 0.9
+Dan 92 share
+Alice 226 3 0.0
+Eve 151 like
+Eve 201 share
+Bob 30 share
+Dan 170 share
+Eve 180 like
+Cathy 28 share
+Cathy 115 share
+Alice 227 2 0.0
+Bob 152 share
+Alice 228 3 0.9
+Eve 192 share
+Eve 176 like
+Dan 223 share
+Eve 209 like
+Bob 215 share
+Bob 210 share
+Eve 14 share
+Dan 181 share
+Cathy 91 share
+Alice 229 2 0.3
+Bob 200 share
+Eve 222 share
+Dan 154 like
+Dan 143 like
+Eve 226 share
+Dan 33 share
+Dan 166 share
+Alice 230 2 0.8
+Alice 231 2 0.2
+Eve 127 like
+Bob 92 like
+Eve 225 like
+Eve 197 like
+Bob 76 share
+Eve 143 like
+Cathy 145 share
+Bob 181 like
+Alice 232 3 0.0
+Eve 217 share
+Dan 201 share
+Dan 178 like
+Alice 233 4 0.9
+Alice 234 4 0.4
+Bob 184 share
+Eve 164 like
+Eve 53 like
+Alice 235 5 0.4
+Bob 76 like
+Dan 206 share
+Alice 236 3 0.7
+Bob 145 share
+Alice 237 3 0.7
+Dan 153 share
+Bob 149 like
+Dan 229 share
+Alice 238 4 0.3
+Bob 85 like
+Alice 239 2 0.5
+Bob 148 like
+Cathy 110 share
+Eve 224 like
+Eve 215 like
+Eve 52 share
+Cathy 100 share
+Alice 240 3 0.7
+Eve 190 share
+Dan 220 share
+Dan 215 share
+Bob 154 like
+Alice 241 4 0.7
+Eve 70 share
+Dan 53 like
+Alice 242 4 0.8
+Dan 46 share
+Eve 234 like
+Eve 48 like
+Cathy 82 share
+Alice 243 4 0.7
+Eve 187 share
+Eve 133 like
+Alice 244 5 0.2
+Alice 245 2 0.0
+Eve 207 like
+Eve 115 like
+Dan 213 share
+Dan 195 share
+Dan 205 share
+Cathy 217 share
+Dan 167 share
+Alice 246 3 0.2
+Eve 178 like
+Eve 82 share
+Eve 246 share
+Dan 14 like
+Dan 82 share
+Alice 247 2 0.7
+Bob 5 like
+Dan 199 share
+Eve 108 like
+Dan 160 share
+Alice 248 4 0.3
+Alice 249 3 0.7
+Eve 110 like
+Eve 180 share
+Dan 95 like
+Eve 216 like
+Eve 154 share
+Eve 224 share
+Bob 167 like
+Alice 250 5 0.7
+Alice 251 3 0.5
+Eve 216 share
+Eve 146 like
+Eve 119 like
+Bob 74 share
+Dan 194 share
+Dan 79 like
+Cathy 187 share
+Alice 252 2 0.2
+Eve 206 like
+Eve 208 like
+Alice 253 4 0.0
+Dan 199 like
+Eve 250 share
+Bob 216 like
+Eve 232 share
+Alice 254 3 0.3
+Eve 162 like
+Eve 231 like
+Eve 183 share
+Eve 239 like
+Dan 200 share
+Alice 255 4 0.9
+Cathy 142 like
+Eve 114 like
+Dan 251 share
+Alice 256 4 0.2
+Eve 163 share
+Eve 11 like
+Eve 92 share
+Alice 257 2 0.3
+Alice 258 2 0.6
+Dan 123 share
+Bob 195 like
+Eve 162 share
+Eve 248 share
+Bob 175 share
+Dan 221 share
+Alice 259 3 0.1
+Eve 144 share
+Cathy 53 like
+Bob 90 like
+Dan 111 like
+Eve 93 like
+Eve 87 share
+Dan 21 share
+Eve 206 share
+Eve 64 share
+Dan 112 share
+Alice 260 4 0.3
+Dan 132 share
+Dan 159 share
+Alice 261 5 0.3
+Cathy 168 like
+Eve 177 like
+Eve 218 like
+Eve 140 like
+Dan 126 like
+Dan 72 share
+Bob 119 share
+Dan 140 share
+Alice 262 5 0.8
+Bob 64 like
+Eve 233 share
+Bob 8 like
+Eve 69 share
+Eve 240 like
+Cathy 257 share
+Dan 210 share
+Bob 227 share
+Alice 263 2 0.0
+Eve 72 like
+Eve 251 like
+Eve 189 share
+Bob 101 share
+Cathy 201 share
+Cathy 63 like
+Alice 264 4 0.9
+Eve 247 like
+Bob 168 like
+Alice 265 3 0.2
+Eve 117 like
+Bob 136 like
+Cathy 191 share
+Dan 5 like
+Eve 125 like
+Cathy 94 share
+Eve 238 share
+Alice 266 5 0.9
+Dan 1 share
+Bob 66 like
+Eve 219 share
+Dan 175 share
+Eve 34 like
+Dan 198 share
+Dan 253 share
+Cathy 228 share
+Dan 217 share
+Bob 257 share
+Alice 267 2 0.9
+Cathy 240 share
+Eve 42 share
+Cathy 88 share
+Eve 219 like
+Alice 268 2 0.3
+Eve 155 share
+Cathy 146 share
+Eve 72 share
+Eve 227 share
+Eve 60 like
+Eve 236 share
+Alice 269 4 0.5
+Eve 228 like
+Eve 152 like
+Eve 255 like
+Alice 270 5 0.7
+Eve 236 like
+Eve 266 like
+Dan 193 share
+Dan 237 share
+Alice 271 2 0.6
+Eve 123 like
+Dan 241 like
+Alice 272 5 0.9
+Cathy 65 share
+Alice 273 3 0.5
+Eve 227 like
+Eve 90 share
+Alice 274 3 0.9
+Cathy 132 share
+Alice 275 3 0.7
+Eve 220 like
+Alice 276 4 0.8
+Eve 129 like
+Bob 65 like
+Alice 277 5 0.3
+Eve 97 like
+Eve 263 share
+Eve 131 share
+Eve 265 like
+Dan 50 share
+Bob 5 share
+Alice 278 4 0.3
+Eve 100 share
+Cathy 183 share
+Eve 104 like
+Alice 279 5 0.5
+Cathy 89 share
+Alice 280 3 0.8
+Alice 281 5 0.1
+Alice 282 4 0.0
+Eve 185 like
+Eve 257 like
+Eve 245 like
+Alice 283 2 0.2
+Alice 284 4 0.9
+Dan 133 share
+Alice 285 3 0.8
+Cathy 222 like
+Alice 286 5 0.3
+Alice 287 3 0.6
+Eve 204 like
+Eve 161 share
+Cathy 243 like
+Dan 216 share
+Dan 285 share
+Cathy 176 share
+Bob 222 share
+Dan 143 share
+Alice 288 5 0.3
+Eve 253 like
+Eve 196 like
+Eve 43 share
+Cathy 260 share
+Dan 131 share
+Eve 203 like
+Cathy 66 like
+Cathy 79 share
+Dan 135 share
+Dan 268 share
+Alice 289 4 0.0
+Eve 141 like
+Eve 167 like
+Dan 120 share
+Eve 274 share
+Bob 87 like
+Eve 205 like
+Eve 3 like
+Alice 290 3 0.3
+Bob 234 like
+Dan 233 share
+Dan 208 share
+Eve 48 share
+Dan 164 share
+Alice 291 4 0.7
+Bob 224 share
+Bob 100 like
+Bob 116 like
+Eve 190 like
+Alice 292 2 0.4
+Eve 46 like
+Cathy 173 share
+Dan 86 share
+Alice 293 5 0.5
+Eve 111 share
+Eve 28 like
+Dan 279 share
+Bob 156 like
+Eve 106 share
+Alice 294 3 0.4
+Alice 295 4 0.0
+Eve 169 share
+Eve 120 like
+Bob 256 share
+Eve 289 share
+Dan 278 share
+Dan 265 share
+Cathy 234 share
+Cathy 261 share
+Alice 296 2 0.4
+Cathy 22 share
+Alice 297 5 0.9
+Alice 298 2 0.2
+Eve 202 share
+Alice 299 5 0.3
+Alice 300 2 0.2
+Eve 275 like
+Dan 281 share
+Dan 292 share
+Alice 301 2 0.0
+Eve 182 like
+Cathy 195 like
+Eve 231 share
+Alice 302 4 0.6
+Bob 212 like
+Eve 233 like
+Eve 291 share
+Bob 174 like
+Eve 97 share
+Dan 17 share
+Cathy 11 share
+Alice 303 3 0.7
+Eve 113 share
+Cathy 221 share
+Dan 231 share
+Eve 184 like
+Cathy 170 share
+Alice 304 3 0.2
+Dan 103 share
+Eve 191 like
+Cathy 23 like
+Eve 137 like
+Alice 305 4 0.0
+Eve 276 like
+Alice 306 5 0.7
+Cathy 72 share
+Eve 193 like
+Eve 205 share
+Alice 307 3 0.2
+Bob 187 share
+Alice 308 3 0.5
+Bob 264 share
+Alice 309 4 0.3
+Bob 105 like
+Eve 260 like
+Eve 229 share
+Alice 310 5 0.7
+Eve 254 like
+Eve 179 share
+Alice 311 4 0.3
+Alice 312 3 0.6
+Dan 226 share
+Dan 109 share
+Eve 213 share
+Alice 313 5 0.9
+Bob 135 like
+Cathy 295 share
+Eve 214 share
+Alice 314 2 0.0
+Eve 299 like
+Eve 25 like
+Alice 315 5 0.4
+Eve 314 like
+Eve 312 share
+Alice 316 5 0.4
+Bob 244 like
+Dan 69 share
+Eve 255 share
+Bob 115 share
+Alice 317 4 0.5
+Cathy 239 share
+Dan 220 like
+Cathy 280 share
+Eve 77 like
+Eve 170 like
+Alice 318 3 0.1
+Dan 257 share
+Cathy 311 share
+Eve 172 like
+Eve 289 like
+Bob 306 like
+Alice 319 3 0.5
+Eve 221 like
+Eve 280 like
+Alice 320 2 0.0
+Dan 118 share
+Bob 248 like
+Dan 309 share
+Alice 321 3 0.7
+Alice 322 4 0.0
+Alice 323 4 0.7
+Cathy 258 share
+Alice 324 5 0.5
+Bob 221 share
+Eve 200 like
+Alice 325 3 0.3
+Alice 326 4 0.5
+Alice 327 5 0.4
+Dan 152 share
+Cathy 136 share
+Eve 94 like
+Dan 27 share
+Alice 328 4 0.8
+Eve 234 share
+Cathy 278 share
+Alice 329 2 0.0
+Dan 184 share
+Cathy 202 share
+Bob 201 like
+Eve 173 like
+Alice 330 2 0.5
+Dan 90 share
+Eve 62 share
+Alice 331 3 0.5
+Eve 211 like
+Alice 332 5 0.7
+Cathy 37 like
+Alice 333 4 0.4
+Eve 279 like
+Dan 54 share
+Eve 292 share
+Bob 119 like
+Dan 191 share
+Bob 131 share
+Eve 301 share
+Cathy 249 share
+Alice 334 2 0.1
+Alice 335 3 0.6
+Dan 145 share
+Eve 100 like
+Eve 273 like
+Dan 66 like
+Eve 16 like
+Dan 298 share
+Dan 107 share
+Alice 336 3 0.1
+Eve 66 share
+Eve 171 like
+Bob 302 like
+Alice 337 3 0.8
+Cathy 328 like
+Dan 284 share
+Alice 338 2 0.4
+Dan 187 share
+Dan 320 share
+Cathy 151 share
+Alice 339 2 0.9
+Alice 340 2 0.5
+Eve 314 share
+Eve 269 like
+Eve 220 share
+Eve 73 like
+Alice 341 4 0.2
+Dan 46 like
+Dan 150 share
+Eve 115 share
+Alice 342 2 0.9
+Eve 275 share
+Alice 343 3 0.5
+Eve 186 share
+Eve 229 like
+Eve 158 like
+Dan 5 share
+Eve 256 share
+Cathy 190 share
+Eve 55 share
+Alice 344 3 0.3
+Eve 241 like
+Eve 103 like
+Eve 310 like
+Alice 345 4 0.6
+Eve 89 like
+Dan 126 share
+Eve 259 like
+Bob 241 like
+Eve 169 like
+Eve 30 like
+Cathy 334 share
+Alice 346 3 0.2
+Eve 304 like
+Eve 244 like
+Eve 176 share
+Eve 305 share
+Cathy 244 share
+Alice 347 2 0.6
+Eve 272 share
+Dan 310 like
+Bob 125 share
+Eve 333 like
+Alice 348 2 0.0
+Cathy 180 like
+Bob 186 like
+Cathy 238 share
+Eve 324 share
+Alice 349 5 0.2
+Bob 106 like
+Cathy 317 share
+Eve 258 like
+Bob 131 like
+Eve 262 like
+Bob 180 share
+Alice 350 4 0.6
+Eve 226 like
+Alice 351 3 0.9
+Eve 291 like
+Eve 280 share
+Cathy 74 share
+Alice 352 4 0.5
+Alice 353 3 0.4
+Alice 354 4 0.0
+Eve 290 like
+Alice 355 4 0.3
+Bob 229 share
+Eve 213 like
+Eve 334 share
+Dan 303 share
+Dan 291 share
+Eve 152 share
+Alice 356 4 0.7
+Eve 324 like
+Eve 198 like
+Dan 176 share
+Dan 350 share
+Alice 357 3 0.0
+Bob 26 share
+Bob 132 like
+Dan 329 like
+Eve 126 share
+Bob 116 share
+Alice 358 4 0.9
+Dan 236 share
+Cathy 138 like
+Alice 359 3 0.5
+Eve 218 share
+Dan 306 share
+Dan 340 share
+Eve 287 like
+Dan 322 share
+Cathy 192 share
+Alice 360 3 0.3
+Alice 361 4 0.2
+Cathy 130 share
+Eve 346 like
+Bob 75 like
+Dan 261 share
+Dan 189 share
+Alice 362 2 0.8
+Cathy 207 share
+Alice 363 5 0.3
+Eve 85 like
+Eve 303 like
+Eve 339 like
+Cathy 348 share
+Dan 265 like
+Eve 223 like
+Eve 212 like
+Alice 364 3 0.3
+Eve 268 like
+Eve 237 like
+Eve 85 share
+Alice 365 2 0.1
+Alice 366 2 0.0
+Eve 320 share
+Eve 248 like
+Dan 325 share
+Alice 367 3 0.8
+Eve 201 like
+Dan 346 share
+Alice 368 5 0.3
+Cathy 281 share
+Eve 256 like
+Eve 167 share
+Eve 44 like
+Dan 367 like
+Bob 319 share
+Dan 239 share
+Eve 360 share
+Cathy 70 share
+Dan 183 share
+Alice 369 3 0.5
+Alice 370 4 0.5
+Eve 286 like
+Eve 309 like
+Eve 99 like
+Cathy 318 share
+Eve 327 like
+Bob 209 like
+Eve 71 like
+Dan 327 share
+Dan 365 like
+Cathy 217 like
+Bob 208 like
+Dan 361 share
+Alice 371 5 0.7
+Eve 284 like
+Cathy 285 share
+Bob 305 like
+Cathy 146 like
+Eve 297 like
+Eve 112 share
+Cathy 365 like
+Cathy 247 share
+Eve 284 share
+Alice 372 3 0.9
+Eve 354 share
+Dan 65 share
+Cathy 222 share
+Dan 63 share
+Cathy 320 share
+Cathy 366 share
+Alice 373 5 0.8
+Alice 374 4 0.0
+Cathy 95 like
+Eve 356 like
+Eve 245 share
+Cathy 368 share
+Eve 166 like
+Eve 86 share
+Eve 366 share
+Dan 211 share
+Alice 375 2 0.8
+Eve 264 like
+Eve 328 share
+Eve 243 like
+Eve 345 like
+Eve 321 like
+Bob 287 like
+Eve 295 share
+Eve 254 share
+Bob 276 like
+Alice 376 5 0.8
+Eve 187 like
+Alice 377 3 0.5
+Eve 136 share
+Bob 112 share
+Dan 272 share
+Bob 74 like
+Bob 97 share
+Alice 378 5 0.1
+Dan 344 like
+Eve 261 share
+Dan 238 share
+Alice 379 4 0.7
+Bob 135 share
+Alice 380 2 0.4
+Eve 246 like
+Eve 244 share
+Eve 199 like
+Bob 223 share
+Cathy 119 share
+Alice 381 3 0.2
+Dan 157 share
+Alice 382 3 0.1
+Eve 365 like
+Bob 281 like
+Eve 379 like
+Cathy 332 share
+Eve 263 like
+Dan 252 share
+Bob 364 like
+Alice 383 5 0.9
+Alice 384 2 0.8
+Alice 385 2 0.5
+Eve 141 share
+Alice 386 2 0.1
+Eve 148 like
+Eve 101 like
+Dan 78 share
+Alice 387 3 0.6
+Dan 293 share
+Cathy 306 share
+Dan 297 share
+Alice 388 5 0.4
+Dan 274 share
+Eve 217 like
+Alice 389 5 0.5
+Alice 390 5 0.7
+Dan 258 share
+Dan 369 share
+Eve 171 share
+Bob 222 like
+Eve 161 like
+Alice 391 2 0.6
+Alice 392 4 0.5
+Alice 393 3 0.3
+Eve 238 like
+Eve 341 like
+Alice 394 5 0.1
+Eve 40 share
+Eve 294 like
+Eve 378 like
+Eve 344 like
+Cathy 214 share
+Dan 296 share
+Alice 395 3 0.6
+Eve 305 like
+Eve 137 share
+Dan 128 share
+Eve 343 share
+Eve 352 share
+Cathy 321 share
+Alice 396 2 0.2
+Dan 348 share
+Eve 296 like
+Alice 397 2 0.8
+Eve 164 share
+Eve 287 share
+Eve 260 share
+Bob 245 share
+Dan 310 share
+Alice 398 4 0.8
+Dan 249 share
+Alice 399 3 0.0
+Alice 400 2 0.4
+Dan 139 like
+Eve 181 like
+Eve 251 share
+Alice 401 4 0.8
+Bob 211 like
+Cathy 149 like
+Alice 402 2 0.7
+Eve 250 like
+Alice 403 5 0.0
+Alice 404 4 0.6
+Eve 336 like
+Eve 188 like
+Eve 317 like
+Dan 333 share
+Bob 282 like
+Alice 405 5 0.1
+Alice 406 3 0.8
+Alice 407 3 0.1
+Dan 188 share
+Bob 152 like
+Dan 372 share
+Dan 302 share
+Alice 408 5 0.8
+Eve 308 share
+Alice 409 5 0.0
+Eve 222 like
+Eve 203 share
+Cathy 392 share
+Dan 127 like
+Alice 410 3 0.1
+Alice 411 2 0.8
+Alice 412 5 0.5
+Eve 362 like
+Bob 315 like
+Alice 413 4 0.8
+Bob 316 share
+Cathy 250 like
+Eve 395 share
+Alice 414 3 0.7
+Eve 320 like
+Cathy 351 share
+Alice 415 2 0.5
+Alice 416 3 0.2
+Cathy 305 like
+Eve 98 share
+Cathy 253 like
+Eve 373 like
+Eve 258 share
+Alice 417 2 0.9
+Cathy 218 like
+Alice 418 3 0.2
+Eve 335 like
+Bob 144 like
+Dan 330 share
+Alice 419 3 0.3
+Bob 129 share
+Bob 140 like
+Bob 377 like
+Cathy 349 share
+Eve 294 share
+Alice 420 2 0.1
+Eve 380 share
+Alice 421 5 0.5
+Eve 52 like
+Bob 225 like
+Alice 422 5 0.8
+Eve 271 like
+Cathy 48 share
+Alice 423 5 0.9
+Alice 424 2 0.5
+Eve 144 like
+Bob 277 like
+Alice 425 2 0.7
+Dan 177 share
+Alice 426 5 0.4
+Alice 427 3 0.5
+Dan 325 like
+Alice 428 3 0.9
+Alice 429 2 0.3
+Eve 163 like
+Cathy 331 share
+Dan 173 share
+Alice 430 3 0.4
+Bob 203 share
+Eve 84 share
+Bob 335 share
+Alice 431 4 0.4
+Dan 314 share
+Bob 232 like
+Alice 432 3 0.3
+Cathy 24 share
+Eve 181 share
+Bob 41 like
+Eve 209 share
+Cathy 245 share
+Eve 101 share
+Dan 294 share
+Alice 433 2 0.5
+Eve 423 like
+Alice 434 5 0.6
+Alice 435 4 0.5
+Bob 305 share
+Eve 318 like
+Alice 436 5 0.1
+Cathy 406 share
+Alice 437 2 0.3
+Eve 192 like
+Cathy 171 share
+Eve 12 share
+Bob 169 like
+Cathy 417 share
+Alice 438 5 0.0
+Bob 288 like
+Alice 439 5 0.7
+Eve 193 share
+Eve 359 like
+Cathy 326 like
+Dan 377 share
+Alice 440 3 0.4
+Eve 15 like
+Alice 441 2 0.4
+Eve 274 like
+Alice 442 4 0.9
+Bob 398 share
+Eve 329 like
+Alice 443 2 0.5
+Alice 444 3 0.9
+Eve 440 share
+Eve 159 share
+Eve 170 share
+Cathy 393 share
+Dan 332 share
+Eve 127 share
+Dan 209 share
+Dan 178 share
+Dan 98 share
+Alice 445 3 0.2
+Cathy 354 like
+Bob 408 share
+Eve 388 share
+Eve 198 share
+Cathy 274 share
+Alice 446 2 0.0
+Eve 392 share
+Alice 447 5 0.0
+Eve 407 like
+Dan 410 share
+Bob 4 like
+Bob 114 like
+Alice 448 3 0.4
+Eve 168 like
+Cathy 273 like
+Eve 132 share
+Eve 83 share
+Alice 449 2 0.6
+Alice 450 3 0.8
+Bob 383 share
+Eve 155 like
+Eve 332 like
+Eve 243 share
+Cathy 118 share
+Dan 111 share
+Cathy 33 share
+Alice 451 4 0.9
+Dan 271 share
+Eve 242 like
+Bob 157 like
+Eve 376 like
+Alice 452 5 0.9
+Dan 39 like
+Eve 179 like
+Dan 192 share
+Alice 453 5 0.9
+Dan 36 like
+Cathy 174 share
+Bob 353 like
+Eve 342 share
+Cathy 168 share
+Eve 405 share
+Alice 454 4 0.7
+Eve 212 share
+Eve 175 like
+Eve 428 share
+Eve 160 like
+Eve 358 share
+Eve 86 like
+Alice 455 2 0.5
+Alice 456 5 0.9
+Dan 368 share
+Cathy 364 share
+Eve 327 share
+Cathy 205 share
+Eve 276 share
+Eve 396 share
+Bob 301 share
+Cathy 282 share
+Alice 457 2 0.2
+Cathy 439 like
+Dan 443 share
+Eve 390 like
+Eve 292 like
+Cathy 230 share
+Bob 322 like
+Alice 458 5 0.3
+Bob 162 like
+Eve 424 share
+Dan 347 share
+Cathy 425 share
+Alice 459 5 0.9
+Eve 341 share
+Cathy 197 share
+Eve 188 share
+Cathy 345 share
+Bob 237 like
+Dan 185 share
+Alice 460 5 0.5
+Eve 402 share
+Eve 281 share
+Eve 360 like
+Cathy 1 share
+Alice 461 4 0.4
+Bob 198 share
+Dan 454 share
+Cathy 127 share
+Dan 84 share
+Cathy 96 share
+Alice 462 4 0.2
+Bob 101 like
+Bob 288 share
+Dan 424 share
+Cathy 189 share
+Eve 214 like
+Bob 10 like
+Eve 199 share
+Eve 313 share
+Alice 463 3 0.1
+Alice 464 4 0.7
+Eve 81 like
+Eve 174 like
+Eve 56 like
+Eve 425 like
+Bob 338 like
+Dan 113 share
+Eve 184 share
+Bob 132 share
+Alice 465 5 0.4
+Dan 267 share
+Dan 316 share
+Alice 466 2 0.3
+Dan 430 share
+Eve 38 like
+Eve 271 share
+Alice 467 5 0.1
+Cathy 152 share
+Eve 386 like
+Eve 80 like
+Dan 345 share
+Alice 468 4 0.3
+Alice 469 5 0.7
+Cathy 186 like
+Eve 363 like
+Eve 352 like
+Dan 162 share
+Eve 458 share
+Dan 224 share
+Eve 427 share
+Alice 470 2 0.5
+Bob 297 like
+Bob 449 like
+Alice 471 4 0.5
+Eve 130 share
+Dan 232 share
+Eve 404 share
+Alice 472 5 0.5
+Eve 36 share
+Bob 63 like
+Eve 235 like
+Eve 448 like
+Dan 248 share
+Cathy 286 share
+Bob 161 share
+Bob 259 share
+Cathy 226 share
+Alice 473 3 0.8
+Dan 263 share
+Eve 240 share
+Dan 362 share
+Eve 406 like
+Eve 384 like
+Eve 58 like
+Bob 214 like
+Eve 331 like
+Dan 174 share
+Eve 378 share
+Alice 474 3 0.4
+Eve 403 like
+Cathy 263 like
+Dan 362 like
+Eve 465 like
+Eve 268 share
+Dan 266 share
+Alice 475 3 0.5
+Eve 297 share
+Dan 270 share
+Cathy 266 share
+Cathy 199 share
+Cathy 413 share
+Eve 315 share
+Alice 476 3 0.9
+Bob 325 like
+Cathy 229 share
+Eve 373 share
+Eve 293 like
+Eve 404 like
+Eve 105 like
+Alice 477 2 0.5
+Eve 114 share
+Eve 308 like
+Eve 428 like
+Alice 478 2 0.6
+Eve 261 like
+Eve 379 share
+Eve 356 share
+Dan 452 share
+Eve 309 share
+Cathy 423 share
+Dan 290 share
+Dan 245 share
+Cathy 194 share
+Alice 479 3 0.9
+Eve 265 share
+Cathy 164 share
+Alice 480 2 0.8
+Eve 158 share
+Eve 443 like
+Alice 481 4 0.9
+Alice 482 4 0.0
+Cathy 353 share
+Cathy 276 share
+Dan 468 share
+Eve 464 like
+Eve 333 share
+Cathy 121 share
+Alice 483 2 0.1
+Eve 277 like
+Dan 240 share
+Eve 471 share
+Alice 484 2 0.3
+Eve 172 share
+Eve 146 share
+Dan 102 share
+Cathy 296 share
+Dan 331 share
+Dan 49 share
+Cathy 15 share
+Bob 185 share
+Alice 485 4 0.1
+Alice 486 2 0.5
+Bob 283 like
+Eve 6 share
+Eve 364 like
+Alice 487 3 0.5
+Dan 298 like
+Bob 390 like
+Alice 488 5 0.1
+Eve 353 share
+Eve 221 share
+Dan 422 share
+Eve 413 share
+Alice 489 4 0.2
+Bob 392 like
+Bob 457 like
+Eve 210 share
+Bob 4 share
+Alice 490 2 0.5
+Eve 200 share
+Alice 491 5 0.3
+Dan 404 like
+Dan 286 share
+Eve 357 like
+Eve 451 like
+Alice 492 4 0.0
+Bob 179 like
+Dan 112 like
+Dan 242 share
+Alice 493 5 0.6
+Eve 409 like
+Eve 473 share
+Alice 494 4 0.3
+Dan 254 share
+Alice 495 2 0.7
+Eve 489 like
+Alice 496 5 0.9
+Eve 459 like
+Eve 351 like
+Dan 486 share
+Cathy 373 share
+Eve 151 share
+Eve 177 share
+Dan 168 share
+Alice 497 4 0.8
+Alice 498 3 0.3
+Eve 429 like
+Eve 288 like
+Eve 400 like
+Eve 323 like
+Eve 371 share
+Cathy 252 share
+Eve 449 share
+Alice 499 4 0.3
+Eve 488 like
+Bob 482 like
+Eve 391 share
+Cathy 478 like
+Dan 186 share
+Eve 49 share
+Eve 225 share
+Eve 239 share
+Alice 500 4 0.6
+Cathy 203 share
+Cathy 267 share
+Eve 282 like
+Eve 195 share
+Cathy 405 like
+Eve 165 share
+Eve 433 share
+activate
+Dan 451 share
+Alice 501 5 0.6
+Eve 444 like
+Alice 502 2 0.65
+Eve 342 like
+Alice 503 3 0.9
+Eve 232 like
+Bob 492 like
+Eve 483 share
+Eve 329 share
+Bob 200 like
+Dan 214 share
+Dan 246 share
+Dan 329 share
+Cathy 485 share
+Dan 366 share
+Dan 259 share
+Cathy 452 share
+Alice 504 5 0.1
+Dan 393 like
+Eve 355 like
+Alice 505 4 0.5
+Eve 442 like
+Eve 334 like
+Eve 462 like
+Dan 207 share
+Eve 387 like
+Eve 249 like
+Dan 445 like
+Eve 457 like
+Eve 174 share
+Eve 357 share
+Bob 65 share
+Eve 306 share
+Eve 235 share
+Dan 497 share
+Alice 506 2 0.7
+Eve 493 like
+Eve 503 share
+Eve 405 like
+Bob 272 like
+Eve 487 like
+Dan 171 share
+Eve 460 like
+Eve 502 like
+Cathy 85 share
+Eve 262 share
+Eve 303 share
+Alice 507 4 0.7
+Cathy 500 share
+Eve 281 like
+Alice 508 8 0.9
+Eve 272 like
+Dan 357 share
+Bob 279 like
+Dan 156 share
+Dan 373 share
+Eve 336 share
+Alice 509 3 0.0
+Eve 299 share
+Eve 15 share
+Dan 484 share
+Bob 138 like
+Cathy 50 like
+Eve 509 share
+Dan 222 share
+Dan 138 share
+Alice 510 4 0.4
+Eve 440 like
+Eve 313 like

@@ -28,8 +28,7 @@ class User(Person):
 
     # Helper Functions
     def increase_seen_for_friends(self):
-        for friend in self.friends:
-            friend.num_received += 1
+        [friend.num_received += 1 for friend in self.friends]
 
     # Calculations
     def reshare_prob(self, friend):  # Definition 4       p(i,j)

@@ -6,8 +6,7 @@
 # throughout the code are described in this paper
 #############################
 
-import os
-import math
+import os, math, json, csv
 from util import print_step, Func
 
 
@@ -181,7 +180,7 @@ def create_people(config):
     return user, friends
 
 
-def create_steps(log, user, friends):
+def create_steps(log, user, friends, k=None, alpha=None):
     """
     Creates a parsed list of steps and returns them
     This has the general format of
@@ -212,8 +211,14 @@ def create_steps(log, user, friends):
     # unless its activate in which case it is just (Type)
     steps = []
     for ln in log:
+        
         if len(ln) == 4:
-            steps.append([Func.Post, user, get_msg(int(ln[1]))])
+            msg_id = int(ln[1])
+            if msg_id == 501 and k is not None and alpha is not None:
+                m = get_msg(msg_id)
+                m.k = k
+                m.sensitivity = alpha
+            steps.append([Func.Post, user, get_msg(msg_id)])
 
         elif ln.count("like") > 0:
             steps.append([Func.Like, get_friend_with_name(ln[0]), get_msg(int(ln[1]))])
@@ -231,45 +236,63 @@ def create_steps(log, user, friends):
 
 
 def main():
-    # Get the inputs into text arrays
-    config, log = get_inputs()
-    # Creates all the people from the config file
-    user, friends = create_people(config)
-    # Gets all the messages and parsed steps
-    messages, steps = create_steps(log, user, friends)
-    # Sets the messages and friends to the variables 
-    # in the user instance
-    user.messages = messages
-    user.friends = friends
-    # Creates the log generator in order to use 'next'
-    log_gen = iterate_log(steps)
+    def run_inner(k=None, alpha=None):
+        # Get the inputs into text arrays
+        config, log = get_inputs()
+        # Creates all the people from the config file
+        user, friends = create_people(config)
+        # Gets all the messages and parsed steps
+        messages, steps = create_steps(log, user, friends, k, alpha)
+        # Sets the messages and friends to the variables 
+        # in the user instance
+        user.messages = messages
+        user.friends = friends
+        # Creates the log generator in order to use 'next'
+        log_gen = iterate_log(steps)
 
-    # Initial logging
-    print("\nThe user:\n{}\n".format(user))
-    print("Friends:")
-    [print(friend) for friend in friends]
+        # Initial logging
+        print("\nThe user:\n{}\n".format(user))
+        print("Friends:")
+        [print(friend) for friend in friends]
 
-    # Iterates through the parsed log steps
-    is_activated = False
-    for i in range(len(log)):
-        step = next(log_gen)
 
-        # Updates the relevant variables for each post type
-        if step[0] == Func.Activate:
-            is_activated = True
-            print("--------\nNow activated\n--------")
-        if step[0] == Func.Post:
-            step[1].increase_seen_for_friends()
-        if step[0] == Func.Like:
-            step[1].num_likes += 1
-        if step[0] == Func.Share:
-            step[1].num_reshares += 1
+        # Iterates through the parsed log steps
+        is_activated = False
+        for i in range(len(log)):
+            step = next(log_gen)
 
-        # Once activated, returns the string
-        # with message id and the people to share it with
-        if is_activated:
+            # Once activated, returns the string
+            # with message id and the people to share it with
+            if is_activated:
+                if step[0] == Func.Post:
+                    res = step[1].utility_sharing_msg_with_friends(step[2])
+                    if step[2].id == 501 and k is not None and alpha is not None:
+                        return res[0]
+
+            # Updates the relevant variables for each post type
+            if step[0] == Func.Activate:
+                is_activated = True
+                print("--------\nNow activated\n--------")
             if step[0] == Func.Post:
-                print(step[1].utility_sharing_msg_with_friends(step[2])[1])
+                step[1].increase_seen_for_friends()
+            if step[0] == Func.Like:
+                step[1].num_likes += 1
+            if step[0] == Func.Share:
+                step[1].num_reshares += 1
+
+    # run_inner()
+    poss_k = list(range(2, 21, 1))
+    poss_alpha = [0.4, 0.6, 0.8]
+
+    results = []
+    for k in poss_k:
+        for alpha in poss_alpha:
+            results.append([k, alpha] + list(run_inner(k, alpha).values()))
+
+    print(results)
+    with open("./data/results.csv", "w") as res:
+        writer = csv.writer(res)
+        writer.writerows(results)
 
 
 if __name__ == "__main__":
